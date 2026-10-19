@@ -1,0 +1,27 @@
+{
+	"id": "ninoleto-aimp",
+	"name": "ninoleto-aimp",
+	"shortname": "aimp-control",
+	"description": "AIMP Companion Control: WebSocket control, live feedback and complete bridge presets",
+	"version": "1.0.0-beta.8",
+	"type": "connection",
+	"license": "MIT",
+	"maintainers": [
+		{
+			"name": "ninoleto"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../src/main.js"
+	},
+	"manufacturer": "ninoleto",
+	"products": ["AIMP Companion Control"],
+	"keywords": ["audio", "player", "music"],
+	"repository": "",
+	"bugs": "",
+	"isPrerelease": true,
+	"legacyIds": []
+}

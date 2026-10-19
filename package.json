@@ -1,0 +1,35 @@
+{
+	"name": "companion-module-ninoleto-aimp",
+	"version": "1.0.0-beta.8",
+	"type": "module",
+	"main": "src/main.js",
+	"manufacturer": "ninoleto",
+	"product": [
+		"AIMP Companion Control"
+	],
+	"shortname": "aimp-control",
+	"scripts": {
+		"format": "prettier -w .",
+		"test": "node --test \"test/*.test.js\"",
+		"package": "companion-module-build",
+		"build": "companion-module-build",
+		"build:dev": "companion-module-build --dev",
+		"test:host": "node test/host-smoke.mjs",
+		"test:native": "node test/native-interop.mjs",
+		"check": "companion-module-check"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": "^22.20"
+	},
+	"dependencies": {
+		"@companion-module/base": "2.1.3",
+		"ws": "8.21.0"
+	},
+	"devDependencies": {
+		"@companion-module/host": "1.2.1",
+		"@companion-module/tools": "3.1.0",
+		"prettier": "3.8.3"
+	},
+	"prettier": "@companion-module/tools/.prettierrc.json"
+}
